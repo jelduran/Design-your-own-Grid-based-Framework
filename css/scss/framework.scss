@@ -1,0 +1,47 @@
+@import 'partials/reset';
+
+@mixin clearfix-pseudos {
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+}
+
+@mixin clearfix-contain {
+  &::after {
+    clear: both;
+  }
+}
+
+$quad-selector: "> div, header, section, article, aside, footer";
+
+/* Framework Styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.mesh {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.mesh,
+.tier {
+  @include clearfix-pseudos();
+}
+
+.mesh,
+.tier {
+  @include clearfix-contain();
+}
+
+[class^="quad-"] {
+  margin-left: 1em;
+  margin-right: 1em;
+  float: left;
+}
