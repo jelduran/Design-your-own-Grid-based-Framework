@@ -134,23 +134,161 @@ table {
   outline: none; }
 
 .mesh {
+  width: 100%; }
+
+.mesh-boxed {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto; }
 
 .mesh::before, .mesh::after,
+.mesh-boxed::before,
+.mesh-boxed::after,
 .tier::before,
 .tier::after {
   content: " ";
   display: table; }
 
 .mesh::after,
+.mesh-boxed::after,
 .tier::after {
   clear: both; }
 
 [class^="quad-"] {
   margin-left: 1em;
   margin-right: 1em;
+  float: left; }
+
+.dist-1 > div,
+.dist-1 > header,
+.dist-1 > section,
+.dist-1 > article,
+.dist-1 > aside,
+.dist-1 > footer {
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-2 > div,
+.dist-2 > header,
+.dist-2 > section,
+.dist-2 > article,
+.dist-2 > aside,
+.dist-2 > footer {
+  width: 50%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-3 > div,
+.dist-3 > header,
+.dist-3 > section,
+.dist-3 > article,
+.dist-3 > aside,
+.dist-3 > footer {
+  width: 33.3333333333%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-4 > div,
+.dist-4 > header,
+.dist-4 > section,
+.dist-4 > article,
+.dist-4 > aside,
+.dist-4 > footer {
+  width: 25%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-5 > div,
+.dist-5 > header,
+.dist-5 > section,
+.dist-5 > article,
+.dist-5 > aside,
+.dist-5 > footer {
+  width: 20%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-6 > div,
+.dist-6 > header,
+.dist-6 > section,
+.dist-6 > article,
+.dist-6 > aside,
+.dist-6 > footer {
+  width: 16.6666666667%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-7 > div,
+.dist-7 > header,
+.dist-7 > section,
+.dist-7 > article,
+.dist-7 > aside,
+.dist-7 > footer {
+  width: 14.2857142857%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-8 > div,
+.dist-8 > header,
+.dist-8 > section,
+.dist-8 > article,
+.dist-8 > aside,
+.dist-8 > footer {
+  width: 12.5%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-9 > div,
+.dist-9 > header,
+.dist-9 > section,
+.dist-9 > article,
+.dist-9 > aside,
+.dist-9 > footer {
+  width: 11.1111111111%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-10 > div,
+.dist-10 > header,
+.dist-10 > section,
+.dist-10 > article,
+.dist-10 > aside,
+.dist-10 > footer {
+  width: 10%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-11 > div,
+.dist-11 > header,
+.dist-11 > section,
+.dist-11 > article,
+.dist-11 > aside,
+.dist-11 > footer {
+  width: 9.0909090909%;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left; }
+
+.dist-12 > div,
+.dist-12 > header,
+.dist-12 > section,
+.dist-12 > article,
+.dist-12 > aside,
+.dist-12 > footer {
+  width: 8.3333333333%;
+  padding-left: 1em;
+  padding-right: 1em;
   float: left; }
 
 /*# sourceMappingURL=framework.css.map */

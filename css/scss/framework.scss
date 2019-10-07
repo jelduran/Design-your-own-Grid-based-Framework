@@ -14,8 +14,6 @@
   }
 }
 
-$quad-selector: "> div, header, section, article, aside, footer";
-
 /* Framework Styles */
 
 *,
@@ -27,15 +25,22 @@ $quad-selector: "> div, header, section, article, aside, footer";
 
 .mesh {
   width: 100%;
+}
+
+.mesh-boxed {
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .mesh,
+.mesh-boxed,
 .tier {
   @include clearfix-pseudos();
 }
 
 .mesh,
+.mesh-boxed,
 .tier {
   @include clearfix-contain();
 }
@@ -44,4 +49,18 @@ $quad-selector: "> div, header, section, article, aside, footer";
   margin-left: 1em;
   margin-right: 1em;
   float: left;
+}
+
+@for $i from 1 through 12 {
+  .dist-#{$i} > div,
+  .dist-#{$i} > header,
+  .dist-#{$i} > section,
+  .dist-#{$i} > article,
+  .dist-#{$i} > aside,
+  .dist-#{$i} > footer {
+    width: percentage(1/$i);
+    padding-left: 1em;
+    padding-right: 1em;
+    float: left;
+  }
 }
