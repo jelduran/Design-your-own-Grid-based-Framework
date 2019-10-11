@@ -60,9 +60,15 @@ $breakpoints: (
   @include clearfix-contain();
 }
 
-[class^="quad-"] {
-  margin-left: 1em;
-  margin-right: 1em;
+[class*="box-"],
+[class*="fillbox-"] > div,
+[class*="fillbox-"] > header,
+[class*="fillbox-"] > section,
+[class*="fillbox-"] > article,
+[class*="fillbox-"] > aside,
+[class*="fillbox-"] > footer {
+  padding-left: 1em;
+  padding-right: 1em;
   float: left;
 }
 
