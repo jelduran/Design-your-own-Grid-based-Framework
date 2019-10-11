@@ -72,16 +72,11 @@ $breakpoints: (
   float: left;
 }
 
-@for $i from 1 through 12 {
-  .dist-#{$i} > div,
-  .dist-#{$i} > header,
-  .dist-#{$i} > section,
-  .dist-#{$i} > article,
-  .dist-#{$i} > aside,
-  .dist-#{$i} > footer {
-    width: percentage(1/$i);
-    padding-left: 1em;
-    padding-right: 1em;
-    float: left;
+@each $name, $breakpoint in $breakpoints {
+  $letter: map-get($breakpoint, 'letter' );
+  $size: map-get($breakpoint, 'size' );
+
+  @media screen and (min-width: $size) {
+
   }
 }
