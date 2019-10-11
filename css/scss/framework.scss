@@ -78,5 +78,18 @@ $breakpoints: (
 
   @media screen and (min-width: $size) {
 
+    @for $i from 1 through 12 {
+
+      .fillbox-#{$i}#{$letter} > div,
+      .fillbox-#{$i}#{$letter} > header,
+      .fillbox-#{$i}#{$letter} > section,
+      .fillbox-#{$i}#{$letter} > article,
+      .fillbox-#{$i}#{$letter} > aside,
+      .fillbox-#{$i}#{$letter} > footer {
+        width: percentage(1/12)*$i;
+      }
+
+    }
+
   }
 }
