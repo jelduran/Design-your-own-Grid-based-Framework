@@ -14,6 +14,21 @@
   }
 }
 
+$breakpoints: (
+  "small": (
+    letter: "s",
+    size: "480px"
+  ),
+  "medium": (
+    letter: "m",
+    size: "720px"
+  ),
+  "large": (
+    letter: "l",
+    size: "1024px"
+  )
+);
+
 /* Framework Styles */
 
 *,
