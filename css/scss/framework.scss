@@ -91,5 +91,13 @@ $breakpoints: (
 
     }
 
+    @for $i from 1 through 12 {
+
+      .box-#{$i}#{$letter} {
+        width: percentage(1/12)*$i !important;
+      }
+      
+    }
+
   }
 }

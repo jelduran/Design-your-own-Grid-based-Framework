@@ -260,7 +260,43 @@ table {
   .fillbox-12s > article,
   .fillbox-12s > aside,
   .fillbox-12s > footer {
-    width: 100%; } }
+    width: 100%; }
+
+  .box-1s {
+    width: 8.3333333333% !important; }
+
+  .box-2s {
+    width: 16.6666666667% !important; }
+
+  .box-3s {
+    width: 25% !important; }
+
+  .box-4s {
+    width: 33.3333333333% !important; }
+
+  .box-5s {
+    width: 41.6666666667% !important; }
+
+  .box-6s {
+    width: 50% !important; }
+
+  .box-7s {
+    width: 58.3333333333% !important; }
+
+  .box-8s {
+    width: 66.6666666667% !important; }
+
+  .box-9s {
+    width: 75% !important; }
+
+  .box-10s {
+    width: 83.3333333333% !important; }
+
+  .box-11s {
+    width: 91.6666666667% !important; }
+
+  .box-12s {
+    width: 100% !important; } }
 @media screen and (min-width: 720px) {
   .fillbox-1m > div,
   .fillbox-1m > header,
@@ -356,7 +392,43 @@ table {
   .fillbox-12m > article,
   .fillbox-12m > aside,
   .fillbox-12m > footer {
-    width: 100%; } }
+    width: 100%; }
+
+  .box-1m {
+    width: 8.3333333333% !important; }
+
+  .box-2m {
+    width: 16.6666666667% !important; }
+
+  .box-3m {
+    width: 25% !important; }
+
+  .box-4m {
+    width: 33.3333333333% !important; }
+
+  .box-5m {
+    width: 41.6666666667% !important; }
+
+  .box-6m {
+    width: 50% !important; }
+
+  .box-7m {
+    width: 58.3333333333% !important; }
+
+  .box-8m {
+    width: 66.6666666667% !important; }
+
+  .box-9m {
+    width: 75% !important; }
+
+  .box-10m {
+    width: 83.3333333333% !important; }
+
+  .box-11m {
+    width: 91.6666666667% !important; }
+
+  .box-12m {
+    width: 100% !important; } }
 @media screen and (min-width: 1024px) {
   .fillbox-1l > div,
   .fillbox-1l > header,
@@ -452,6 +524,42 @@ table {
   .fillbox-12l > article,
   .fillbox-12l > aside,
   .fillbox-12l > footer {
-    width: 100%; } }
+    width: 100%; }
+
+  .box-1l {
+    width: 8.3333333333% !important; }
+
+  .box-2l {
+    width: 16.6666666667% !important; }
+
+  .box-3l {
+    width: 25% !important; }
+
+  .box-4l {
+    width: 33.3333333333% !important; }
+
+  .box-5l {
+    width: 41.6666666667% !important; }
+
+  .box-6l {
+    width: 50% !important; }
+
+  .box-7l {
+    width: 58.3333333333% !important; }
+
+  .box-8l {
+    width: 66.6666666667% !important; }
+
+  .box-9l {
+    width: 75% !important; }
+
+  .box-10l {
+    width: 83.3333333333% !important; }
+
+  .box-11l {
+    width: 91.6666666667% !important; }
+
+  .box-12l {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=framework.css.map */
