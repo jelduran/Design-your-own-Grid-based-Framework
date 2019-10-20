@@ -561,5 +561,8 @@ table {
 
   .box-12l {
     width: 100% !important; } }
+/* Helper classes */
+.center {
+  margin: 0 auto; }
 
 /*# sourceMappingURL=framework.css.map */

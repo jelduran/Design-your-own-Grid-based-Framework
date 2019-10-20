@@ -73,6 +73,7 @@ $breakpoints: (
 }
 
 @each $name, $breakpoint in $breakpoints {
+
   $letter: map-get($breakpoint, 'letter' );
   $size: map-get($breakpoint, 'size' );
 
@@ -100,4 +101,11 @@ $breakpoints: (
     }
 
   }
+  
+}
+
+/* Helper classes */
+
+.center {
+  margin: 0 auto;
 }
