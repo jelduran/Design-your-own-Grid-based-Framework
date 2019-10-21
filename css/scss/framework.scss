@@ -31,10 +31,20 @@ $breakpoints: (
 
 /* Framework Styles */
 
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   outline: none;
 }
 
