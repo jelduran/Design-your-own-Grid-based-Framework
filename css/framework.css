@@ -185,6 +185,162 @@ html {
   float: left;
 }
 
+.fillbox-1 > div,
+.fillbox-1 > header,
+.fillbox-1 > section,
+.fillbox-1 > article,
+.fillbox-1 > aside,
+.fillbox-1 > footer {
+  width: 8.3333333333%;
+}
+
+.fillbox-2 > div,
+.fillbox-2 > header,
+.fillbox-2 > section,
+.fillbox-2 > article,
+.fillbox-2 > aside,
+.fillbox-2 > footer {
+  width: 16.6666666667%;
+}
+
+.fillbox-3 > div,
+.fillbox-3 > header,
+.fillbox-3 > section,
+.fillbox-3 > article,
+.fillbox-3 > aside,
+.fillbox-3 > footer {
+  width: 25%;
+}
+
+.fillbox-4 > div,
+.fillbox-4 > header,
+.fillbox-4 > section,
+.fillbox-4 > article,
+.fillbox-4 > aside,
+.fillbox-4 > footer {
+  width: 33.3333333333%;
+}
+
+.fillbox-5 > div,
+.fillbox-5 > header,
+.fillbox-5 > section,
+.fillbox-5 > article,
+.fillbox-5 > aside,
+.fillbox-5 > footer {
+  width: 41.6666666667%;
+}
+
+.fillbox-6 > div,
+.fillbox-6 > header,
+.fillbox-6 > section,
+.fillbox-6 > article,
+.fillbox-6 > aside,
+.fillbox-6 > footer {
+  width: 50%;
+}
+
+.fillbox-7 > div,
+.fillbox-7 > header,
+.fillbox-7 > section,
+.fillbox-7 > article,
+.fillbox-7 > aside,
+.fillbox-7 > footer {
+  width: 58.3333333333%;
+}
+
+.fillbox-8 > div,
+.fillbox-8 > header,
+.fillbox-8 > section,
+.fillbox-8 > article,
+.fillbox-8 > aside,
+.fillbox-8 > footer {
+  width: 66.6666666667%;
+}
+
+.fillbox-9 > div,
+.fillbox-9 > header,
+.fillbox-9 > section,
+.fillbox-9 > article,
+.fillbox-9 > aside,
+.fillbox-9 > footer {
+  width: 75%;
+}
+
+.fillbox-10 > div,
+.fillbox-10 > header,
+.fillbox-10 > section,
+.fillbox-10 > article,
+.fillbox-10 > aside,
+.fillbox-10 > footer {
+  width: 83.3333333333%;
+}
+
+.fillbox-11 > div,
+.fillbox-11 > header,
+.fillbox-11 > section,
+.fillbox-11 > article,
+.fillbox-11 > aside,
+.fillbox-11 > footer {
+  width: 91.6666666667%;
+}
+
+.fillbox-12 > div,
+.fillbox-12 > header,
+.fillbox-12 > section,
+.fillbox-12 > article,
+.fillbox-12 > aside,
+.fillbox-12 > footer {
+  width: 100%;
+}
+
+.box-1 {
+  width: 8.3333333333% !important;
+}
+
+.box-2 {
+  width: 16.6666666667% !important;
+}
+
+.box-3 {
+  width: 25% !important;
+}
+
+.box-4 {
+  width: 33.3333333333% !important;
+}
+
+.box-5 {
+  width: 41.6666666667% !important;
+}
+
+.box-6 {
+  width: 50% !important;
+}
+
+.box-7 {
+  width: 58.3333333333% !important;
+}
+
+.box-8 {
+  width: 66.6666666667% !important;
+}
+
+.box-9 {
+  width: 75% !important;
+}
+
+.box-10 {
+  width: 83.3333333333% !important;
+}
+
+.box-11 {
+  width: 91.6666666667% !important;
+}
+
+.box-12 {
+  width: 100% !important;
+}
+
 @media screen and (min-width: 480px) {
   .fillbox-1s > div,
   .fillbox-1s > header,

@@ -1,4 +1,4 @@
-@import 'partials/reset';
+@import "partials/reset";
 
 @mixin clearfix-pseudos {
   &::before,
@@ -76,36 +76,45 @@ html {
   float: left;
 }
 
-@each $name, $breakpoint in $breakpoints {
+@for $i from 1 through 12 {
+  .fillbox-#{$i} > div,
+  .fillbox-#{$i} > header,
+  .fillbox-#{$i} > section,
+  .fillbox-#{$i} > article,
+  .fillbox-#{$i} > aside,
+  .fillbox-#{$i} > footer {
+    width: percentage(1/12) * $i;
+  }
+}
 
-  $letter: map-get($breakpoint, 'letter' );
-  $size: map-get($breakpoint, 'size' );
+@for $i from 1 through 12 {
+  .box-#{$i} {
+    width: percentage(1/12) * $i !important;
+  }
+}
+
+@each $name, $breakpoint in $breakpoints {
+  $letter: map-get($breakpoint, "letter");
+  $size: map-get($breakpoint, "size");
 
   @media screen and (min-width: $size) {
-
     @for $i from 1 through 12 {
-
       .fillbox-#{$i}#{$letter} > div,
       .fillbox-#{$i}#{$letter} > header,
       .fillbox-#{$i}#{$letter} > section,
       .fillbox-#{$i}#{$letter} > article,
       .fillbox-#{$i}#{$letter} > aside,
       .fillbox-#{$i}#{$letter} > footer {
-        width: percentage(1/12)*$i;
+        width: percentage(1/12) * $i;
       }
-
     }
 
     @for $i from 1 through 12 {
-
       .box-#{$i}#{$letter} {
-        width: percentage(1/12)*$i !important;
+        width: percentage(1/12) * $i !important;
       }
-      
     }
-
   }
-  
 }
 
 /* Helper classes */
