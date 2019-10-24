@@ -158,7 +158,8 @@ html {
   margin: 0 auto;
 }
 
-.mesh::before, .mesh::after,
+.mesh::before,
+.mesh::after,
 .mesh-boxed::before,
 .mesh-boxed::after,
 .tier::before,
