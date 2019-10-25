@@ -33,12 +33,16 @@ This class defines horizontal levels into the mesh.
 This class defines the most inner elements into the mesh, where 'n' is an integer number from 1 to 12 which is the width of box according to its parent width. For example `<div class="box-6">` is a div which is a [(parent width/12)*6] width.
 
 **fillbox-n**  
-This is a experimental feature of the framework to set the width of box elements inside of a 'tier' class element, where 'n' is an integer number from 1 to 12 which is the width of inner boxes according to its own width. For example `<div class="tier fillbox-3">` set children elements' width as if they were 'box-3' elements. This only works for 'div', 'header', 'section', 'article', 'aside' and 'footer' html elements into the 'tier' class element.
+This is a experimental feature of the framework to set the width of box elements inside of a 'tier' class of any other block type element, where 'n' is an integer number from 1 to 12 which is the width of inner boxes according to its own width. For example `<div class="tier fillbox-3">` set children elements' width as if they were 'box-3' elements. This only works for 'div', 'header', 'section', 'article', 'aside' and 'footer' html elements into the 'tier' class element.
 
 **center-box**  
 This class is for centering a block element inside its parent.
 
 ## Project source can be downloaded from: <https://github.com/jelduran/Design-your-own-Grid-based-Framework>
+
+## Framework applied in: <https://github.com/jelduran/Framework-Sass>
+
+**[Live version](https://raw.githack.com/jelduran/Framework-Sass/feature/index.html)**
   
 ## License & Copyright
 
