@@ -15,9 +15,13 @@
 }
 
 $breakpoints: (
+  "extra-small": (
+    letter: "xs",
+    size: "480px"
+  ),
   "small": (
     letter: "s",
-    size: "480px"
+    size: "576px"
   ),
   "medium": (
     letter: "m",

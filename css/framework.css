@@ -343,6 +343,164 @@ html {
 }
 
 @media screen and (min-width: 480px) {
+  .fillbox-1xs > div,
+  .fillbox-1xs > header,
+  .fillbox-1xs > section,
+  .fillbox-1xs > article,
+  .fillbox-1xs > aside,
+  .fillbox-1xs > footer {
+    width: 8.3333333333%;
+  }
+
+  .fillbox-2xs > div,
+  .fillbox-2xs > header,
+  .fillbox-2xs > section,
+  .fillbox-2xs > article,
+  .fillbox-2xs > aside,
+  .fillbox-2xs > footer {
+    width: 16.6666666667%;
+  }
+
+  .fillbox-3xs > div,
+  .fillbox-3xs > header,
+  .fillbox-3xs > section,
+  .fillbox-3xs > article,
+  .fillbox-3xs > aside,
+  .fillbox-3xs > footer {
+    width: 25%;
+  }
+
+  .fillbox-4xs > div,
+  .fillbox-4xs > header,
+  .fillbox-4xs > section,
+  .fillbox-4xs > article,
+  .fillbox-4xs > aside,
+  .fillbox-4xs > footer {
+    width: 33.3333333333%;
+  }
+
+  .fillbox-5xs > div,
+  .fillbox-5xs > header,
+  .fillbox-5xs > section,
+  .fillbox-5xs > article,
+  .fillbox-5xs > aside,
+  .fillbox-5xs > footer {
+    width: 41.6666666667%;
+  }
+
+  .fillbox-6xs > div,
+  .fillbox-6xs > header,
+  .fillbox-6xs > section,
+  .fillbox-6xs > article,
+  .fillbox-6xs > aside,
+  .fillbox-6xs > footer {
+    width: 50%;
+  }
+
+  .fillbox-7xs > div,
+  .fillbox-7xs > header,
+  .fillbox-7xs > section,
+  .fillbox-7xs > article,
+  .fillbox-7xs > aside,
+  .fillbox-7xs > footer {
+    width: 58.3333333333%;
+  }
+
+  .fillbox-8xs > div,
+  .fillbox-8xs > header,
+  .fillbox-8xs > section,
+  .fillbox-8xs > article,
+  .fillbox-8xs > aside,
+  .fillbox-8xs > footer {
+    width: 66.6666666667%;
+  }
+
+  .fillbox-9xs > div,
+  .fillbox-9xs > header,
+  .fillbox-9xs > section,
+  .fillbox-9xs > article,
+  .fillbox-9xs > aside,
+  .fillbox-9xs > footer {
+    width: 75%;
+  }
+
+  .fillbox-10xs > div,
+  .fillbox-10xs > header,
+  .fillbox-10xs > section,
+  .fillbox-10xs > article,
+  .fillbox-10xs > aside,
+  .fillbox-10xs > footer {
+    width: 83.3333333333%;
+  }
+
+  .fillbox-11xs > div,
+  .fillbox-11xs > header,
+  .fillbox-11xs > section,
+  .fillbox-11xs > article,
+  .fillbox-11xs > aside,
+  .fillbox-11xs > footer {
+    width: 91.6666666667%;
+  }
+
+  .fillbox-12xs > div,
+  .fillbox-12xs > header,
+  .fillbox-12xs > section,
+  .fillbox-12xs > article,
+  .fillbox-12xs > aside,
+  .fillbox-12xs > footer {
+    width: 100%;
+  }
+
+  .box-1xs {
+    width: 8.3333333333% !important;
+  }
+
+  .box-2xs {
+    width: 16.6666666667% !important;
+  }
+
+  .box-3xs {
+    width: 25% !important;
+  }
+
+  .box-4xs {
+    width: 33.3333333333% !important;
+  }
+
+  .box-5xs {
+    width: 41.6666666667% !important;
+  }
+
+  .box-6xs {
+    width: 50% !important;
+  }
+
+  .box-7xs {
+    width: 58.3333333333% !important;
+  }
+
+  .box-8xs {
+    width: 66.6666666667% !important;
+  }
+
+  .box-9xs {
+    width: 75% !important;
+  }
+
+  .box-10xs {
+    width: 83.3333333333% !important;
+  }
+
+  .box-11xs {
+    width: 91.6666666667% !important;
+  }
+
+  .box-12xs {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
   .fillbox-1s > div,
   .fillbox-1s > header,
   .fillbox-1s > section,
