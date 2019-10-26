@@ -498,6 +498,10 @@ html {
   .box-12xs {
     width: 100% !important;
   }
+
+  .flex-d-xs {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -655,6 +659,10 @@ html {
 
   .box-12s {
     width: 100% !important;
+  }
+
+  .flex-d-s {
+    display: flex;
   }
 }
 
@@ -814,6 +822,10 @@ html {
   .box-12m {
     width: 100% !important;
   }
+
+  .flex-d-m {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -972,11 +984,127 @@ html {
   .box-12l {
     width: 100% !important;
   }
+
+  .flex-d-l {
+    display: flex;
+  }
 }
 
 /* Helper classes */
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #4a4a4a;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2px;
+}
+
+h4 {
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+h6 {
+  font-size: 0.85rem;
+  letter-spacing: 0.2px;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a.button {
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+p {
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+  margin: 0;
+  line-height: 1.88;
+}
+
+/* positioning */
 .center-box {
   margin: 0 auto;
+}
+
+/* visibility */
+.hidden {
+  display: none;
+}
+
+/* decoration */
+.accent {
+  color: #ce973e;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* text colors */
+.primary {
+  color: #6abfc3;
+}
+
+.secondary {
+  color: rgba(74, 74, 74, 0.7);
+}
+
+/* backgrounds colors */
+.button-primary {
+  background-color: #6abfc3;
+}
+
+.button-secondary {
+  background-color: #cc9543;
+}
+
+.gray-bg {
+  background-color: #f3f3f3;
+}
+
+/* flex */
+.flex-d {
+  display: flex;
 }
 
 /*# sourceMappingURL=framework.css.map */

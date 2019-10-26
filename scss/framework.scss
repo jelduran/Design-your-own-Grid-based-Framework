@@ -118,11 +118,13 @@ html {
         width: percentage(1/12) * $i !important;
       }
     }
+
+    .flex-d-#{$letter} {
+      display: flex;
+    }
   }
 }
 
 /* Helper classes */
 
-.center-box {
-  margin: 0 auto;
-}
+@import "partials/helpers";
