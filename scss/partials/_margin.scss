@@ -1,0 +1,28 @@
+@each $side in $sides {
+  $name: nth($side, 1);
+  $letter: nth($side, 2);
+
+  /* margin#{$name} */
+  @each $space in $spacer {
+    $code: nth($space, 1);
+    $value: nth($space, 2);
+
+    @if $letter== "blank" {
+      .m-#{$code} {
+        margin: $value !important;
+      }
+    } @else if $letter== "x" {
+      .m-#{$letter}-#{$code} {
+        margin: 0 $value !important;
+      }
+    } @else if $letter== "y" {
+      .m-#{$letter}-#{$code} {
+        margin: $value 0 !important;
+      }
+    } @else {
+      .m-#{$letter}-#{$code} {
+        margin#{$name}: $value !important;
+      }
+    }
+  }
+}

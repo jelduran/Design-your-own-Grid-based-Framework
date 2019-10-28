@@ -1,130 +1,29 @@
 @import "partials/reset";
 
-@mixin clearfix-pseudos {
-  &::before,
-  &::after {
-    content: " ";
-    display: table;
-  }
-}
+@import "partials/data";
 
-@mixin clearfix-contain {
-  &::after {
-    clear: both;
-  }
-}
+@import "partials/mixin";
 
-$breakpoints: (
-  "extra-small": (
-    letter: "xs",
-    size: "480px"
-  ),
-  "small": (
-    letter: "s",
-    size: "576px"
-  ),
-  "medium": (
-    letter: "m",
-    size: "720px"
-  ),
-  "large": (
-    letter: "l",
-    size: "1024px"
-  )
-);
+@import "partials/grid";
 
-/* Framework Styles */
+@import "partials/margin";
 
-html {
-  box-sizing: border-box;
-}
+@import "partials/nmargin";
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  outline: none;
-}
+@import "partials/paddings";
 
-.mesh {
-  width: 100%;
-}
+@import "partials/float";
 
-.mesh-boxed {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
+@import "partials/position";
 
-.mesh,
-.mesh-boxed,
-.tier {
-  @include clearfix-pseudos();
-}
+@import "partials/display";
 
-.mesh,
-.mesh-boxed,
-.tier {
-  @include clearfix-contain();
-}
+@import "partials/flex";
 
-[class*="box-"],
-[class*="fillbox-"] > div,
-[class*="fillbox-"] > header,
-[class*="fillbox-"] > section,
-[class*="fillbox-"] > article,
-[class*="fillbox-"] > aside,
-[class*="fillbox-"] > footer {
-  padding-left: 1em;
-  padding-right: 1em;
-  float: left;
-}
+@import "partials/color";
 
-@for $i from 1 through 12 {
-  .fillbox-#{$i} > div,
-  .fillbox-#{$i} > header,
-  .fillbox-#{$i} > section,
-  .fillbox-#{$i} > article,
-  .fillbox-#{$i} > aside,
-  .fillbox-#{$i} > footer {
-    width: percentage(1/12) * $i;
-  }
-}
+@import "partials/text";
 
-@for $i from 1 through 12 {
-  .box-#{$i} {
-    width: percentage(1/12) * $i !important;
-  }
-}
+@import "partials/border";
 
-@each $name, $breakpoint in $breakpoints {
-  $letter: map-get($breakpoint, "letter");
-  $size: map-get($breakpoint, "size");
-
-  @media screen and (min-width: $size) {
-    @for $i from 1 through 12 {
-      .fillbox-#{$i}#{$letter} > div,
-      .fillbox-#{$i}#{$letter} > header,
-      .fillbox-#{$i}#{$letter} > section,
-      .fillbox-#{$i}#{$letter} > article,
-      .fillbox-#{$i}#{$letter} > aside,
-      .fillbox-#{$i}#{$letter} > footer {
-        width: percentage(1/12) * $i;
-      }
-    }
-
-    @for $i from 1 through 12 {
-      .box-#{$i}#{$letter} {
-        width: percentage(1/12) * $i !important;
-      }
-    }
-
-    .flex-d-#{$letter} {
-      display: flex;
-    }
-  }
-}
-
-/* Helper classes */
-
-@import "partials/helpers";
+@import "partials/button";

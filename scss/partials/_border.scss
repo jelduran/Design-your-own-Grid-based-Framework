@@ -1,0 +1,36 @@
+@each $side in $sides {
+  $name: nth($side, 1);
+  $letter: nth($side, 2);
+
+  /* border#{$name} */
+  @each $space in $spacer {
+    $code: nth($space, 1);
+    $value: nth($space, 2);
+
+    @if $letter== "blank" {
+      .b-#{$code} {
+        border: $value;
+      }
+    } @else if $letter== "x" {
+      .b-#{$letter}-#{$code} {
+        border: 0 $value;
+      }
+    } @else if $letter== "y" {
+      .b-#{$letter}-#{$code} {
+        border: $value 0;
+      }
+    } @else {
+      .b-#{$letter}-#{$code} {
+        border#{$name}: $value;
+      }
+    }
+  }
+}
+
+.b-rounded {
+    border-radius: 10%;
+}
+
+.b-circle {
+    border-radius: 50%;
+}

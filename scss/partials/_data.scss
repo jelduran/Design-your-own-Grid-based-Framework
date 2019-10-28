@@ -1,0 +1,32 @@
+$breakpoints: (
+  "extra-small": (
+    letter: "xs",
+    size: "480px"
+  ),
+  "small": (
+    letter: "s",
+    size: "576px"
+  ),
+  "medium": (
+    letter: "m",
+    size: "720px"
+  ),
+  "large": (
+    letter: "l",
+    size: "1024px"
+  )
+);
+
+$sides: (
+  "" "blank",
+  "-top" "t",
+  "-left" "l",
+  "-bottom" "b",
+  "-right" "r",
+  "-x-sides" "x",
+  "-y-sides" "y"
+);
+
+$spacer: (0 0, 1 0.25rem, 2 0.5rem, 3 0.75rem, 4 1rem);
+
+$font_sizes: (s 0.75rem, b 1rem, m 1.5rem, l 2rem, xl 3rem);

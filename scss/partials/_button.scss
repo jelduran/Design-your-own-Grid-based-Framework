@@ -1,0 +1,36 @@
+/* button */
+
+.button-gray {
+  background-color: #f3f3f3;
+}
+
+.button-acccent {
+  background-color: #cc9543;
+}
+
+.button-passed {
+  background-color: #2cbe4e;
+}
+
+.button-primary {
+  background-color: #6abfc3;
+}
+
+.button-secondary {
+  background-color: rgba(74, 74, 74, 0.7);
+}
+
+a.button {
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
