@@ -94,19 +94,19 @@ html {
         $value: nth($space, 2);
 
         @if $side_letter== "blank" {
-          p-#{$letter}-#{$code} {
+          .p-#{$letter}-#{$code} {
             padding: $value;
           }
         } @else if $side_letter== "x" {
-          p-#{$side_letter}-#{$letter}-#{$code} {
+          .p-#{$side_letter}-#{$letter}-#{$code} {
             padding: 0 $value;
           }
         } @else if $side_letter== "y" {
-          p-#{$side_letter}-#{$letter}-#{$code} {
+          .p-#{$side_letter}-#{$letter}-#{$code} {
             padding: $value 0;
           }
         } @else {
-          p-#{$side_letter}-#{$letter}-#{$code} {
+          .p-#{$side_letter}-#{$letter}-#{$code} {
             padding#{$name}: $value;
           }
         }
