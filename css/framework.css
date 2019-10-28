@@ -598,13 +598,13 @@ table {
   clear: both;
 }
 
-.c-fix:before,
-.c-fix:after {
+.c-fix::before,
+.c-fix::after {
   content: " ";
   display: table;
 }
 
-.c-fix:after {
+.c-fix::after {
   clear: both;
 }
 
@@ -1052,7 +1052,8 @@ html {
   margin: 0 auto;
 }
 
-.mesh::before, .mesh::after,
+.mesh::before,
+.mesh::after,
 .mesh-boxed::before,
 .mesh-boxed::after,
 .tier::before,
@@ -1547,6 +1548,7 @@ html {
     display: flex;
   }
 }
+
 @media screen and (min-width: 576px) {
   .fillbox-1s > div,
   .fillbox-1s > header,
@@ -1859,6 +1861,7 @@ html {
     display: flex;
   }
 }
+
 @media screen and (min-width: 720px) {
   .fillbox-1m > div,
   .fillbox-1m > header,
@@ -2171,6 +2174,7 @@ html {
     display: flex;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .fillbox-1l > div,
   .fillbox-1l > header,
