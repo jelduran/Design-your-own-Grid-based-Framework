@@ -20,12 +20,12 @@
     clear: both;
 }
 
-.c-fix:before,
-.c-fix:after {
+.c-fix::before,
+.c-fix::after {
   content: " ";
   display: table;
 }
 
-.c-fix:after {
+.c-fix::after {
   clear: both;
 }
