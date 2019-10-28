@@ -2,7 +2,7 @@
   $name: nth($side, 1);
   $letter: nth($side, 2);
 
-  /* margin#{$name} negative*/
+  /* margin#{$name} negative */
   @each $space in $spacer {
     $code: nth($space, 1);
     $value: nth($space, 2);
