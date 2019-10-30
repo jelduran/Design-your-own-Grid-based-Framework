@@ -95,19 +95,19 @@ html {
 
         @if $side_letter== "blank" {
           .p-#{$letter}-#{$code} {
-            padding: $value;
+            padding: $value !important;
           }
         } @else if $side_letter== "x" {
           .p-#{$side_letter}-#{$letter}-#{$code} {
-            padding: 0 $value;
+            padding: 0 $value !important;
           }
         } @else if $side_letter== "y" {
           .p-#{$side_letter}-#{$letter}-#{$code} {
-            padding: $value 0;
+            padding: $value 0 !important;
           }
         } @else {
           .p-#{$side_letter}-#{$letter}-#{$code} {
-            padding#{$name}: $value;
+            padding#{$name}: $value !important;
           }
         }
       }

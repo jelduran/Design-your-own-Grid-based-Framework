@@ -9,19 +9,19 @@
 
     @if $letter== "blank" {
       .p-#{$code} {
-        padding: $value;
+        padding: $value !important;
       }
     } @else if $letter== "x" {
       .p-#{$letter}-#{$code} {
-        padding: 0 $value;
+        padding: 0 $value !important;
       }
     } @else if $letter== "y" {
       .p-#{$letter}-#{$code} {
-        padding: $value 0;
+        padding: $value 0 !important;
       }
     } @else {
       .p-#{$letter}-#{$code} {
-        padding#{$name}: $value;
+        padding#{$name}: $value !important;
       }
     }
   }
