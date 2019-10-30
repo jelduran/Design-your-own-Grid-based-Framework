@@ -7,19 +7,25 @@
     $code: nth($space, 1);
     $value: nth($space, 2);
 
-    @if $letter== "blank" {
+    @if $letter=="blank" {
       .m-#{$code} {
         margin: $value !important;
       }
-    } @else if $letter== "x" {
+    }
+
+    @else if $letter=="x" {
       .m-#{$letter}-#{$code} {
         margin: 0 $value !important;
       }
-    } @else if $letter== "y" {
+    }
+
+    @else if $letter=="y" {
       .m-#{$letter}-#{$code} {
         margin: $value 0 !important;
       }
-    } @else {
+    }
+
+    @else {
       .m-#{$letter}-#{$code} {
         margin#{$name}: $value !important;
       }

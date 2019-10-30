@@ -11,7 +11,7 @@ module.exports = {
       ignore: ["after-comment"],
     } ],
     "at-rule-no-unknown": [true, {
-      "ignoreAtRules": ["function", "if", "else", "each", "include", "mixin"]
+      "ignoreAtRules": ["function", "if", "else", "for", "each", "include", "mixin"]
     }],
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
