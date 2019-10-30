@@ -34,25 +34,24 @@ html {
 }
 
 [class*="box-"],
-[class*="fillbox-"]>div,
-[class*="fillbox-"]>header,
-[class*="fillbox-"]>section,
-[class*="fillbox-"]>article,
-[class*="fillbox-"]>aside,
-[class*="fillbox-"]>footer {
+[class*="fillbox-"] > div,
+[class*="fillbox-"] > header,
+[class*="fillbox-"] > section,
+[class*="fillbox-"] > article,
+[class*="fillbox-"] > aside,
+[class*="fillbox-"] > footer {
   padding-left: 1em;
   padding-right: 1em;
   float: left;
 }
 
 @for $i from 1 through 12 {
-
-  .fillbox-#{$i}>div,
-  .fillbox-#{$i}>header,
-  .fillbox-#{$i}>section,
-  .fillbox-#{$i}>article,
-  .fillbox-#{$i}>aside,
-  .fillbox-#{$i}>footer {
+  .fillbox-#{$i} > div,
+  .fillbox-#{$i} > header,
+  .fillbox-#{$i} > section,
+  .fillbox-#{$i} > article,
+  .fillbox-#{$i} > aside,
+  .fillbox-#{$i} > footer {
     width: percentage(1/12) * $i;
   }
 }
@@ -70,13 +69,12 @@ $breakpoint in $breakpoints {
 
   @media screen and (min-width: $size) {
     @for $i from 1 through 12 {
-
-      .fillbox-#{$i}#{$letter}>div,
-      .fillbox-#{$i}#{$letter}>header,
-      .fillbox-#{$i}#{$letter}>section,
-      .fillbox-#{$i}#{$letter}>article,
-      .fillbox-#{$i}#{$letter}>aside,
-      .fillbox-#{$i}#{$letter}>footer {
+      .fillbox-#{$i}#{$letter} > div,
+      .fillbox-#{$i}#{$letter} > header,
+      .fillbox-#{$i}#{$letter} > section,
+      .fillbox-#{$i}#{$letter} > article,
+      .fillbox-#{$i}#{$letter} > aside,
+      .fillbox-#{$i}#{$letter} > footer {
         width: percentage(1/12) * $i;
       }
     }

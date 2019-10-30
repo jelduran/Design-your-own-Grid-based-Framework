@@ -1,14 +1,13 @@
 @mixin clearfix-pseudos {
-
-    &::before,
-    &::after {
-        content: " ";
-        display: table;
-    }
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
 }
 
 @mixin clearfix-contain {
-    &::after {
-        clear: both;
-    }
+  &::after {
+    clear: both;
+  }
 }
