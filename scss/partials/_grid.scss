@@ -27,9 +27,9 @@ html {
   @include clearfix-pseudos();
 }
 
+.tier,
 .mesh-boxed,
-.mesh,
-.tier {
+.mesh {
   @include clearfix-contain();
 }
 
