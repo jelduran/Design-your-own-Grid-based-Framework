@@ -27,8 +27,8 @@ html {
   @include clearfix-pseudos();
 }
 
-.mesh,
 .mesh-boxed,
+.mesh,
 .tier {
   @include clearfix-contain();
 }
@@ -63,7 +63,7 @@ html {
 }
 
 @each $name,
-$breakpoint in $breakpoints {
+  $breakpoint in $breakpoints {
   $letter: map-get($breakpoint, "letter");
   $size: map-get($breakpoint, "size");
 
