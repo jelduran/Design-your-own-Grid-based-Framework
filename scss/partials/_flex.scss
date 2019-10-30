@@ -1,0 +1,37 @@
+/* flex alignment */
+
+.f-x-start {
+  justify-content: flex-start;
+}
+
+.f-x-center {
+  justify-content: center;
+}
+
+.f-x-end {
+  justify-content: flex-end;
+}
+
+.f-y-start {
+  align-items: flex-start;
+}
+
+.f-y-center {
+  align-items: center;
+}
+
+.f-y-end {
+  align-items: flex-end;
+}
+
+.f-selfy-start {
+  align-self: flex-start;
+}
+
+.f-selfy-center {
+  align-self: center;
+}
+
+.f-selfy-end {
+  align-self: flex-end;
+}

@@ -1,0 +1,31 @@
+/* floats and clear */
+
+.f-left {
+  float: left !important;
+}
+
+.f-right {
+  float: right !important;
+}
+
+.c-left {
+  clear: left;
+}
+
+.c-right {
+  clear: right;
+}
+
+.c-both {
+  clear: both;
+}
+
+.c-fix::before,
+.c-fix::after {
+  content: " ";
+  display: table;
+}
+
+.c-fix::after {
+  clear: both;
+}

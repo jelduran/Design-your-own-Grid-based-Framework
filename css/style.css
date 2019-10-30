@@ -1,0 +1,44 @@
+.card-spacer {
+  margin-bottom: 1rem;
+}
+
+.box-sample {
+  height: 8rem;
+  width: 100%;
+}
+
+.code-sample {
+  font-family: 'Courier New', monospace, serif;
+  margin-bottom: 10px;
+  overflow: auto;
+  width: auto;
+  background-color: #eee;
+  max-height: 600px;
+  white-space: normal;
+}
+
+.full-h {
+  height: 100%;
+}
+
+.model-b-in {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+.color-b {
+  width: 8rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.contrast-bg {
+  background-color: #dcffe4;
+}
+
+.shadow {
+  box-shadow: 0 0.05em 0.5em 0 rgba(0, 0, 0, 0.3);
+}

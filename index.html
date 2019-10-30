@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Framework</title>
+  </head>
+
+  <body class="gray-bg">
+    <div class="mesh-boxed">
+      <div class="tier">
+        <main
+          class="p-fixed box-12-l p-l-4 b-2 b-rounded white-bg passed-border"
+          style="max-width: 1100px; z-index: 100;"
+        >
+          <h1 class="accent">Framework for Microverse</h1>
+          <p>
+            This is a <span class="t-bold">CSS Framework</span> created with
+            <span class="t-bold">Sass Preprocessor</span>. It allows a grid
+            system of maximum 12 columns with a base font size of 16 pixels and
+            "Lucida Sans" as a default font family. Next are described available
+            classes and how to use them!
+          </p>
+        </main>
+      </div>
+      <div class="tier p-x-l-4">
+        <section
+          class="box-12l p-l-4 white-bg b-y-3 passed-border card-spacer"
+          style="margin-top: 10rem;"
+        >
+          <h3 class="primary">Mesh</h3>
+          <p>
+            Classes <span class="t-bold">mesh</span> and
+            <span class="t-bold">mesh-boxed</span> represents the main container
+            of the framework. The only difference is that
+            <span class="t-bold">mesh-boxed</span> has a
+            <span class="t-bold secondary">max-width</span> value of 1100px. For
+            example all the elements in this webpage are contained in a
+            <span class="t-bold">mesh-boxed</span> class element.
+          </p>
+        </section>
+      </div>
+      <div class="tier p-x-l-4">
+        <section class="box-12l p-l-4 white-bg b-y-3 passed-border card-spacer">
+          <h3 class="primary">Boxes</h3>
+          <p class="m-b-4">
+            Class <span class="t-bold">box-n</span> where
+            <span class="t-bold secondary">n</span> represents the number of
+            columns that the box will occupy; if
+            <span class="t-bold secondary">n</span> is multiple of 12, the boxes
+            will be able to fill the whole space, if not, the elements that
+            doesn't fit will move behind the row if they overpass the available
+            space. These classes can be set on any no-inline-type element.
+            <span class="secondary t-s"
+              >(Blue color is showing gutters in examples.)</span
+            >
+          </p>
+          <h5 class="p-t-l-4">Example 1</h5>
+          <div class="box-3l b-rounded t-s t-bold code-sample gray-bg p-l-4">
+            &lt;div class="box-4"&gt;One&lt;/div&gt;<br />
+            &lt;div class="box-4"&gt;Two&lt;/div&gt;<br />
+            &lt;div class="box-4"&gt;Three&lt;/div&gt;
+          </div>
+          <div class="box-9l">
+            <div class="box-4l box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">4 columns</div>
+            </div>
+            <div class="box-4l box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">4 columns</div>
+            </div>
+            <div class="box-4l box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">4 columns</div>
+            </div>
+          </div>
+          <h5 class="p-t-l-4 c-both">Example 2</h5>
+          <div class="box-3l b-rounded t-s t-bold code-sample gray-bg p-l-4">
+            &lt;div class="box-4"&gt;One&lt;/div&gt;<br />
+            &lt;div class="box-4"&gt;Two&lt;/div&gt;<br />
+            &lt;div class="box-5"&gt;Three&lt;/div&gt;
+          </div>
+          <div class="box-9l">
+            <div class="box-4l box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">4 columns</div>
+            </div>
+            <div class="box-4l box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">4 columns</div>
+            </div>
+            <div class="box-5l box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">5 columns</div>
+            </div>
+          </div>
+          <h5 class="p-t-l-4 c-both">Example 3</h5>
+          <div class="box-3l b-rounded t-s t-bold code-sample gray-bg p-l-4">
+            &lt;div class="box-7"&gt;One&lt;/div&gt;<br />
+            &lt;div class="box-5"&gt;Two&lt;/div&gt;
+          </div>
+          <div class="box-9l">
+            <div class="box-7l box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">7 columns</div>
+            </div>
+            <div class="box-5l box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">5 columns</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tier p-x-l-4">
+        <section class="box-12l p-l-4 white-bg b-y-3 passed-border card-spacer">
+          <h3 class="primary">Fill Boxes</h3>
+          <p class="m-b-4">
+            Sometimes is neccessary to fill a
+            <span class="t-bold">tier</span> or a
+            <span class="t-bold">box</span> with a number of boxes of the same
+            size. The class <span class="t-bold">fillbox-n</span> allow to do
+            this with no need of assigning a class to every child element,
+            <span class="t-bold secondary">n</span> still represents the number
+            of columns that any filler box will occupy; if
+            <span class="t-bold secondary">n</span> is multiple of 12, the boxes
+            will be able to fill the whole space, if not, the elements that
+            doesn't fit will move behind the row if they overpass the available
+            space. The <span class="t-bold">fillbox-n</span> class only
+            distribute elements of type
+            <span class="t-bold secondary">div</span>,
+            <span class="t-bold secondary">header</span>,
+            <span class="t-bold secondary">section</span>,
+            <span class="t-bold secondary">article</span>,
+            <span class="t-bold secondary">aside</span> and
+            <span class="t-bold secondary">footer</span>.
+            <span class="secondary t-s"
+              >(Blue color is showing gutters in examples.)</span
+            >
+          </p>
+          <h5 class="p-t-l-4">Example 1</h5>
+          <div class="box-3l b-rounded t-s t-bold code-sample gray-bg p-l-4">
+            &lt;div class="fillbox-4"&gt;<br />
+            &nbsp;&lt;div&gt;One&lt;/div&gt;<br />
+            &nbsp;&lt;div&gt;Two&lt;/div&gt;<br />
+            &nbsp;&lt;div&gt;Three&lt;/div&gt;<br />
+            &lt;/div&gt;
+          </div>
+          <div class="box-9l fillbox-4l">
+            <div class="box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">4 columns</div>
+            </div>
+            <div class="box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">4 columns</div>
+            </div>
+            <div class="box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">4 columns</div>
+            </div>
+          </div>
+          <h5 class="p-t-l-4 c-both">Example 2</h5>
+          <div class="box-3l b-rounded t-s t-bold code-sample gray-bg p-l-4">
+            &lt;div class="fillbox-5"&gt;<br />
+            &nbsp;&lt;div&gt;One&lt;/div&gt;<br />
+            &nbsp;&lt;div&gt;Two&lt;/div&gt;<br />
+            &lt;/div&gt;
+          </div>
+          <div class="box-9l fillbox-5l">
+            <div class="box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">5 columns</div>
+            </div>
+            <div class="box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">5 columns</div>
+            </div>
+          </div>
+          <h5 class="p-t-l-4 c-both">Example 3</h5>
+          <div class="box-3l b-rounded t-s t-bold code-sample gray-bg p-l-4">
+            &lt;div class="fillbox-5"&gt;<br />
+            &nbsp;&lt;div&gt;One&lt;/div&gt;<br />
+            &nbsp;&lt;div&gt;Two&lt;/div&gt;<br />
+            &nbsp;&lt;div&gt;Three&lt;/div&gt;<br />
+            &lt;/div&gt;
+          </div>
+          <div class="box-9l fillbox-5l">
+            <div class="box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">5 columns</div>
+            </div>
+            <div class="box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">5 columns</div>
+            </div>
+            <div class="box-sample b-1 secondary-border primary-bg">
+              <div class="white-bg full-h">5 columns</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tier p-x-l-4">
+        <section class="box-12l p-l-4 white-bg b-y-3 passed-border card-spacer">
+          <h3 class="primary">Breakpoints</h3>
+          <p class="m-b-4">
+            This framework has
+            <span class="t-bold">breakpoints</span> at
+            <span class="t-bold secondary">1024px</span>,
+            <span class="t-bold secondary">720px</span>,
+            <span class="t-bold secondary">576px</span> and
+            <span class="t-bold secondary">480px</span> minimum screen widths,
+            represented by letters <span class="t-bold secondary">l</span>,
+            <span class="t-bold secondary">m</span>,
+            <span class="t-bold secondary">s</span> and
+            <span class="t-bold secondary">xs</span> respectively. By default
+            non-breakpoint classes works for a screen size smaller than
+            <span class="t-bold secondary">480px</span>. Classes
+            <span class="t-bold">box-n</span> and
+            <span class="t-bold">fillbox-n</span> use breakpoints just by adding
+            the corresponding letter at the end of the class name, for example,
+            <span class="t-bold">box-4s</span> or
+            <span class="t-bold">fillbox-12l</span>, for other classes that set
+            <span class="t-bold secondary">CSS</span>
+            properties is neccessary to add
+            <span class="t-bold">-breakpoint</span> either at the end or in the
+            class name, for example, <span class="t-bold">d-flex-m</span> sets
+            <span class="t-bold secondary">display:flex</span> for an element at
+            breakpoint <span class="t-bold">m</span> and
+            <span class="t-bold">p-t-s-1</span> sets
+            <span class="t-bold secondary">padding-top: 0.25rem</span> for an
+            element at breakpoint <span class="t-bold">s</span>.
+          </p>
+        </section>
+      </div>
+      <div class="tier p-x-l-4">
+        <section class="box-12l p-l-4 white-bg b-y-3 passed-border card-spacer">
+          <h3 class="primary">Margins</h3>
+          <p class="m-b-4">
+            Margins are defined by class <span class="t-bold">m-n</span> where
+            <span class="t-bold secondary">n</span> is a number from 0 to 4
+            representing the size of the margin. This can be also defined for a
+            given side using the notation
+            <span class="t-bold"
+              >m[-t | -l | -b | -r]-&lt;0 | 1 | 2 | 3 | 4&gt;</span
+            >, for example, <span class="t-bold">m-t-2</span> sets
+            <span class="t-bold">margin-top</span> in size
+            <span class="t-bold">2</span>.
+            <span class="secondary t-s"
+              >(Gray color is showing margins in examples.)</span
+            >
+          </p>
+          <h5 class="p-t-l-4 t-center primary t-bold">Showcase</h5>
+          <div class="box-12l fillbox-2l">
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-t-4 b-1 secondary-border">
+                  m-t-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-r-4 b-1 secondary-border">
+                  m-r-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-b-4 b-1 secondary-border">
+                  m-b-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-l-4 b-1 secondary-border">
+                  m-l-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-x-4 b-1 secondary-border">
+                  m-x-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-y-4 b-1 secondary-border">
+                  m-y-4
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-12l fillbox-2l">
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-0 b-1 secondary-border">
+                  m-0
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-1 b-1 secondary-border">
+                  m-1
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-2 b-1 secondary-border">
+                  m-2
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-3 b-1 secondary-border">
+                  m-3
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg">
+                <div class="white-bg model-b-in m-4 b-1 secondary-border">
+                  m-4
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tier p-x-l-4">
+        <section class="box-12l p-l-4 white-bg b-y-3 passed-border card-spacer">
+          <h3 class="primary">Paddings</h3>
+          <p class="m-b-4">
+            Paddings are defined by class <span class="t-bold">p-n</span> where
+            <span class="t-bold secondary">n</span> is a number from 0 to 4
+            representing the size of the margin. This can be also defined for
+            either a given side or a given breakpoint using the notation
+            <span class="t-bold"
+              >p[[-t | -l | -b | -r] | &lt;-t | -l | -b | -r&gt;[-l | -m | -s |
+              -xs]]-&lt;0 | 1 | 2 | 3 | 4&gt;</span
+            >, for example, <span class="t-bold">p-t-m-2</span> sets
+            <span class="t-bold">padding-top</span> for breakpoint
+            <span class="t-bold">m</span> in size <span class="t-bold">2</span>.
+            <span class="secondary t-s"
+              >(Blue color is showing paddings in examples.)</span
+            >
+          </p>
+          <h5 class="p-t-l-4 t-center primary t-bold">Showcase</h5>
+          <div class="box-12l fillbox-2l">
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-t-4 secondary-border">
+                  p-t-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-r-4 secondary-border">
+                  p-r-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-b-4 secondary-border">
+                  p-b-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-l-4 secondary-border">
+                  p-l-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-x-4 secondary-border">
+                  p-x-4
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-y-4 secondary-border">
+                  p-y-4
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-12l fillbox-2l">
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-0 secondary-border">
+                  p-0
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-1 secondary-border">
+                  p-1
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-2 secondary-border">
+                  p-2
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-3 secondary-border">
+                  p-3
+                </div>
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="primary-bg b-1 secondary-border">
+                <div class="white-bg model-b-in m-4 secondary-border">
+                  p-4
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tier p-x-l-4">
+        <section class="box-12l p-l-4 white-bg b-y-3 passed-border card-spacer">
+          <h3 class="primary">Borders</h3>
+          <p class="m-b-4">
+            Borders are defined by class <span class="t-bold">b-n</span> where
+            <span class="t-bold secondary">n</span> is a number from 0 to 4
+            representing the size of the margin. This can be also defined for a
+            given side using the notation
+            <span class="t-bold"
+              >b[-t | -l | -b | -r]-&lt;0 | 1 | 2 | 3 | 4&gt;</span
+            >, for example, <span class="t-bold">b-t-2</span> sets
+            <span class="t-bold">margin-top</span> in size
+            <span class="t-bold">2</span>.
+            <span class="secondary t-s"
+              >(Green color is showing borders in examples.)</span
+            >
+          </p>
+          <h5 class="p-t-l-4 t-center primary t-bold">Showcase</h5>
+          <div class="box-12l fillbox-2l">
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-t-4 passed-border">
+                b-t-4
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-r-4 passed-border">
+                b-r-4
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-b-4 passed-border">
+                b-b-4
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-l-4 passed-border">
+                b-l-4
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-x-4 passed-border">
+                b-x-4
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-y-4 passed-border">
+                b-y-4
+              </div>
+            </div>
+          </div>
+          <div class="box-12l fillbox-2l">
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-0 passed-border">
+                b-0
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-1 passed-border">
+                b-1
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-2 passed-border">
+                b-2
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-3 passed-border">
+                b-3
+              </div>
+            </div>
+            <div class="box-sample p-l-0 d-flex f-x-center f-y-center">
+              <div class="gray-bg model-b-in b-4 passed-border">
+                b-4
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tier p-x-l-4">
+        <section
+          class="box-12l p-l-4 contrast-bg b-y-3 passed-border card-spacer"
+        >
+          <h3 class="accent">Colors</h3>
+          <p class="m-b-4">
+            There are 7 framework colors for text, backgrounds and borders. Can
+            be defined by the notation
+            <span class="t-bold"
+              >&lt;white | gray | secondary | black | primary | accent |
+              passed&gt;[-bg | -border]</span
+            >, for example, <span class="t-bold">gray-bg</span> sets
+            <span class="t-bold">gray</span> element's background color,
+            <span class="t-bold">accent-border</span> sets element's border
+            color and only <span class="t-bold">primary</span> with no suffix,
+            sets text color.
+          </p>
+          <h5 class="p-t-l-4 t-center primary t-bold">Showcase</h5>
+          <div class="box-sample d-flex p-l-0 f-x-center f-y-center">
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded black-bg white"
+            >
+              white
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded white-bg gray"
+            >
+              gray
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded white-bg secondary"
+            >
+              secondary
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded white-bg black"
+            >
+              black
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded white-bg primary"
+            >
+              primary
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded white-bg accent"
+            >
+              accent
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded white-bg passed"
+            >
+              passed
+            </div>
+          </div>
+          <div class="box-sample d-flex p-l-0 f-x-center f-y-center">
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded white-bg black"
+            >
+              white-bg
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded gray-bg black"
+            >
+              gray-bg
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded secondary-bg white"
+            >
+              secondary-bg
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded black-bg white"
+            >
+              black-bg
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded primary-bg white"
+            >
+              primary-bg
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded accent-bg white"
+            >
+              accent-bg
+            </div>
+            <div
+              class="color-b shadow m-x-3 t-s t-bold secondary-border b-rounded passed-bg white"
+            >
+              passed-bg
+            </div>
+          </div>
+          <div class="box-sample d-flex p-l-0 f-x-center f-y-center">
+            <div
+              class="color-b b-3 m-x-3 t-s t-bold white-border b-rounded gray-bg black"
+            >
+              white-border
+            </div>
+            <div
+              class="color-b b-3 m-x-3 t-s t-bold gray-border b-rounded white-bg black"
+            >
+              gray-border
+            </div>
+            <div
+              class="color-b b-3 m-x-3 t-s t-bold secondary-border b-rounded white-bg black"
+            >
+              secondary-border
+            </div>
+            <div
+              class="color-b b-3 m-x-3 t-s t-bold black-border b-rounded white-bg black"
+            >
+              black-border
+            </div>
+            <div
+              class="color-b b-3 m-x-3 t-s t-bold primary-border b-rounded white-bg black"
+            >
+              primary-border
+            </div>
+            <div
+              class="color-b b-3 m-x-3 t-s t-bold accent-border b-rounded white-bg black"
+            >
+              accent-border
+            </div>
+            <div
+              class="color-b b-3 m-x-3 t-s t-bold passed-border b-rounded white-bg black"
+            >
+              passed-border
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tier">
+        <footer
+          class="box-12-l p-l-4 b-2 b-rounded white-bg passed-border t-s t-bold t-right"
+          style="max-width: 1100px;"
+        >
+          <p>
+            This is a basic <span class="t-bold">CSS Framework</span> but is
+            still under construction. Next step is test it and add many
+            necessary classes for links, lists and forms, so why not in the
+            future create more elaborated components by means of all these
+            classes!
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

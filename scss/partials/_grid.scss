@@ -1,0 +1,135 @@
+/* grid system */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+.mesh {
+  width: 100%;
+}
+
+.mesh-boxed {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mesh::before,
+.mesh::after,
+.mesh-boxed::before,
+.mesh-boxed::after,
+.tier::before,
+.tier::after {
+  content: " ";
+  display: table;
+}
+
+.mesh::after,
+.mesh-boxed::after,
+.tier::after {
+  clear: both;
+}
+
+[class*="box-"],
+[class*="fillbox-"] > div,
+[class*="fillbox-"] > header,
+[class*="fillbox-"] > section,
+[class*="fillbox-"] > article,
+[class*="fillbox-"] > aside,
+[class*="fillbox-"] > footer {
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left;
+}
+
+@for $i from 1 through 12 {
+  .fillbox-#{$i} > div,
+  .fillbox-#{$i} > header,
+  .fillbox-#{$i} > section,
+  .fillbox-#{$i} > article,
+  .fillbox-#{$i} > aside,
+  .fillbox-#{$i} > footer {
+    width: percentage(1/12) * $i;
+  }
+}
+
+@for $i from 1 through 12 {
+  .box-#{$i} {
+    width: percentage(1/12) * $i !important;
+  }
+}
+
+@each $name,
+  $breakpoint in $breakpoints {
+  $letter: map-get($breakpoint, "letter");
+  $size: map-get($breakpoint, "size");
+
+  @media screen and (min-width: $size) {
+    @for $i from 1 through 12 {
+      .fillbox-#{$i}#{$letter} > div,
+      .fillbox-#{$i}#{$letter} > header,
+      .fillbox-#{$i}#{$letter} > section,
+      .fillbox-#{$i}#{$letter} > article,
+      .fillbox-#{$i}#{$letter} > aside,
+      .fillbox-#{$i}#{$letter} > footer {
+        width: percentage(1/12) * $i;
+      }
+    }
+
+    @for $i from 1 through 12 {
+      .box-#{$i}#{$letter} {
+        width: percentage(1/12) * $i !important;
+      }
+    }
+
+    @each $side in $sides {
+      $name: nth($side, 1);
+      $side_letter: nth($side, 2);
+
+      /* padding#{$name} #{$letter} */
+      @each $space in $spacer {
+        $code: nth($space, 1);
+        $value: nth($space, 2);
+
+        @if $side_letter=="blank" {
+          .p-#{$letter}-#{$code} {
+            padding: $value !important;
+          }
+        }
+
+        @else if $side_letter=="x" {
+          .p-#{$side_letter}-#{$letter}-#{$code} {
+            padding: 0 $value !important;
+          }
+        }
+
+        @else if $side_letter=="y" {
+          .p-#{$side_letter}-#{$letter}-#{$code} {
+            padding: $value 0 !important;
+          }
+        }
+
+        @else {
+          .p-#{$side_letter}-#{$letter}-#{$code} {
+            padding#{$name}: $value !important;
+          }
+        }
+      }
+    }
+
+    .d-flex-#{$letter} {
+      display: flex;
+    }
+
+    .d-hidden-#{$letter} {
+      display: flex;
+    }
+  }
+}

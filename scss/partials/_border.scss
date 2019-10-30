@@ -1,0 +1,44 @@
+@each $side in $sides {
+  $name: nth($side, 1);
+  $letter: nth($side, 2);
+
+  /* border#{$name} */
+  @each $border in $border_sizes {
+    $code: nth($border, 1);
+    $value: nth($border, 2);
+
+    @if $letter=="blank" {
+      .b-#{$code} {
+        border: $value solid;
+      }
+    }
+
+    @else if $letter=="x" {
+      .b-#{$letter}-#{$code} {
+        border-left: $value solid;
+        border-right: $value solid;
+      }
+    }
+
+    @else if $letter=="y" {
+      .b-#{$letter}-#{$code} {
+        border-top: $value solid;
+        border-bottom: $value solid;
+      }
+    }
+
+    @else {
+      .b-#{$letter}-#{$code} {
+        border#{$name}: $value solid;
+      }
+    }
+  }
+}
+
+.b-rounded {
+  border-radius: 1rem;
+}
+
+.b-circle {
+  border-radius: 50%;
+}
