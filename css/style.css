@@ -8,7 +8,7 @@
 }
 
 .code-sample {
-  font-family: Courier New, monospace, serif;
+  font-family: 'Courier New', monospace, serif;
   margin-bottom: 10px;
   overflow: auto;
   width: auto;
@@ -18,7 +18,7 @@
 }
 
 .full-h {
-    height: 100%;
+  height: 100%;
 }
 
 .model-b-in {
