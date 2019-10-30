@@ -21,16 +21,20 @@ html {
   margin: 0 auto;
 }
 
-.mesh,
-.mesh-boxed,
-.tier {
-  @include clearfix-pseudos();
+.mesh::before,
+.mesh::after,
+.mesh-boxed::before,
+.mesh-boxed::after,
+.tier::before,
+.tier::after {
+  content: " ";
+  display: table;
 }
 
-.tier,
-.mesh-boxed,
-.mesh {
-  @include clearfix-contain();
+.mesh::after,
+.mesh-boxed::after,
+.tier::after {
+  clear: both;
 }
 
 [class*="box-"],
