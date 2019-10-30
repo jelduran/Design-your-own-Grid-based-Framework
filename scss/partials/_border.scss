@@ -7,21 +7,27 @@
     $code: nth($border, 1);
     $value: nth($border, 2);
 
-    @if $letter== "blank" {
+    @if $letter=="blank" {
       .b-#{$code} {
         border: $value solid;
       }
-    } @else if $letter== "x" {
+    }
+
+    @else if $letter=="x" {
       .b-#{$letter}-#{$code} {
         border-left: $value solid;
         border-right: $value solid;
       }
-    } @else if $letter== "y" {
+    }
+
+    @else if $letter=="y" {
       .b-#{$letter}-#{$code} {
         border-top: $value solid;
         border-bottom: $value solid;
       }
-    } @else {
+    }
+
+    @else {
       .b-#{$letter}-#{$code} {
         border#{$name}: $value solid;
       }
@@ -30,9 +36,9 @@
 }
 
 .b-rounded {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 .b-circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
